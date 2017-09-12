@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0">
+		<!-- Live2D Library -->
+        <script src="lib/live2d.min.js"></script>
+
+        <!-- User's Script -->
+    	<script src="framework/Live2DFramework.js"></script>
+    	<script src="src/utils/MatrixStack.js"></script>
+    	<script src="src/utils/ModelSettingJson.js"></script>
+    	<script src="src/LAppDefine.js"></script>
+    	<script src="src/LAppLive2DManager.js"></script>
+    	<script src="src/LAppModel.js"></script>
+    	<script src="src/PlatformManager.js"></script>
+    	<script src="src/SampleApp1.js"></script>
+    	<style>
+    		  #glcanvas {
+                /*
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                */
+                background-size: 150%;
+                background-position: 50% 50%;
+                background-image: url(assets/image/back_class_normal.png);
+            }
+            html, body {
+                oveflow: hidden;
+                height: 100%;
+            }
+             
+    	</style>
+</head>
+<body onclick="sampleApp1()">
+	 
+	<div style="margin: auto;width:300px;">
+		<canvas id="glcanvas" width="400" height="400" style="border:1px solid red;"></canvas>	
+	</div>
+	
+	
+
+    	<script>
+    		sampleApp1()
+    	</script>
+
+</body>
+</html>
